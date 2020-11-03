@@ -1,10 +1,16 @@
 # 介绍
+
+## 注意点
+- 代码仅供理解RSA实现的原理，并不是正规RSA加密。只能实现数字加解密。涉及到字母等，需稍作修改。
+- 过大数字计算受电脑配置影响，故在生成大素数及密钥时，本人稍作限制，把私钥位数控制在6位以下。解密时偶尔会卡顿，是电脑运算速度问题
+- 代码未优化，仅供参考
+
 ## 技术架构
 - electron：创建桌面化程序
 - 纯html+js+css
 
 ## 功能
-实现rsa私钥和公钥自动生成，取值范围可以满足一般电脑在20秒以内运算出答案
+实现rsa私钥和公钥自动生成，自行输入明文密文加解密
 
 ## 目录说明
 ```
@@ -28,8 +34,6 @@ function getE(){}//计算公钥e
 function getD() {}//计算私钥d
 function transform(mc,edn,key){}//加解密
 ```
-## 注意点
-方法仅供参考，只能实现数字加解密。涉及到字母等，需稍作修改。
 
 ## 使用方法
 ### 安装环境
@@ -43,7 +47,7 @@ nodejs
     - mac:`brew cask install wine-stable`
     - linux:[Wine Is Not an Emulator](https://www.winehq.org/)
 
-2. 根目录执行`npm run package`
+2. 根目录执行`npm run package`,可执行程序位置：`./out/RSA-win32-x64/RSA`
 
 ## 其他
 修改软件名、版本信息、描述、入口点、作者等信息，修改脚本命令以及应用程序图标，参考package.json

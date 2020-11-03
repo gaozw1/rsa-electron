@@ -6,6 +6,7 @@ let win = new BrowserWindow({
     height: 600,
 
 })
+    //菜单
     Menu.setApplicationMenu(null);
 
     win.loadFile("index.html");
