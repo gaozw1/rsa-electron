@@ -1,0 +1,59 @@
+#random {
+    margin-top: 35px;
+    float: left;
+    position: relative;
+    left: 130px;
+    height: 40px;
+}
+
+#keyDiv {
+    position: absolute; 
+    left: 300px; 
+    margin-top: 10px;
+}
+
+#textDiv {
+    position: relative;
+    top: 100px;
+}
+
+#ciphertext {
+    margin-right: 20px;
+}
+
+#plaintext {
+    margin-left: 20px;
+}
+
+#buttDiv {
+    position: relative;
+    bottom: -140px;
+    margin-left: 350px;
+}
+
+.text {
+    width: 300px;
+    height: 300px;
+}
+
+
+#encode {
+    position: relative;
+    right: 150px;
+}
+
+
+.butt {
+    width: 100px;
+    height: 40px;
+}
+
+#clear {
+    position: relative;
+    right: 120px;
+}
+
+#decode {
+    position: relative;
+    right: 80px;
+}

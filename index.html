@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <title>RSA</title>
+</head>
+<body>
+    <!-- 生成密钥 -->
+    <button type="button" onclick="getKey()" id="random">生成密钥</button>
+    <div id="keyDiv">
+        <p>私钥：(<span id="d"></span>，<span id="dn"></span>)</p>
+        <p>公钥：(<span id="e"></span>，<span id="en"></span>)</p>
+    </div>
+    <!-- 文本框 -->
+    <div id="textDiv">
+        <textarea id="plaintext" class="text"></textarea>
+        <textarea id="ciphertext" class="text"></textarea>
+    </div>
+    <!-- 按钮 -->
+    <div id="buttDiv">
+        <button type="button" id="encode" class="butt" onclick="encode()">加密</button>
+        <button type="button" id="clear" class="butt" onclick="cler()">全部清空</button>
+        <button type="button" id="decode" class="butt" onclick="decode()">解密</button>
+    </div>
+</body>
+</html>
