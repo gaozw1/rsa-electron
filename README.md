@@ -43,11 +43,11 @@ nodejs
 ### 运行
 根目录执行`npm start`
 ### 打包成windows应用程序
-1. 非windows平台打包成windosw应用程序需要安装wine64
+1. 根目录执行`npm run package`,可执行程序位置：`./out/RSA-win32-x64/RSA`
+2. 非windows平台打包成windosw应用程序需要安装wine64
     - mac:`brew cask install wine-stable`
     - linux:[Wine Is Not an Emulator](https://www.winehq.org/)
-
-2. 根目录执行`npm run package`,可执行程序位置：`./out/RSA-win32-x64/RSA`
-
+3. 打包成非windows平台应用程序参见[electron-packager模块](https://github.com/electron/electron-packager)
+4. 打包使用了[electron-packager](https://github.com/electron/electron-packager)模块打包，这个模块需要Node.js10.0或更高版本运行。
 ## 其他
 修改软件名、版本信息、描述、入口点、作者等信息，修改脚本命令以及应用程序图标，参考package.json
